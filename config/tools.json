@@ -1,0 +1,42 @@
+{
+    "ngspice": {
+        "name": "Ngspice",
+        "description": "Open-source circuit simulator",
+
+        "windows": {
+            "package_manager": "winget",
+            "package_id": "ngspice.ngspice",
+            "fallback": "official",
+            "executable": "ngspice_con.exe",
+            "install_root": "%USERPROFILE%\\eSimTools\\Ngspice"
+        },
+
+        "linux": {
+            "package_manager": "apt",
+            "package_name": "ngspice"
+        },
+
+        "official_url": "https://sourceforge.net/projects/ngspice/files/ng-spice-rework/47/ngspice-47_64.7z/download",
+
+        "version_command": "ngspice_con.exe -v"
+    },
+
+    "kicad": {
+        "name": "KiCad",
+        "description": "Open-source electronics design automation suite",
+
+        "windows": {
+            "package_manager": "winget",
+            "package_id": "KiCad.KiCad"
+        },
+
+        "linux": {
+            "package_manager": "apt",
+            "package_name": "kicad"
+        },
+
+        "official_url": "https://www.kicad.org/download/",
+
+        "version_command": "kicad-cli --version"
+    }
+}
